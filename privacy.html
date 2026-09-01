@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zásady ochrany soukromí — Sapiora</title>
+<style>
+  body{max-width:720px;margin:40px auto;padding:0 20px;font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6;color:#14171C;background:#FBFBF9;}
+  h1{font-size:28px;letter-spacing:-0.5px;font-family:Georgia,serif;}
+  h2{font-size:18px;margin-top:32px;letter-spacing:-0.3px;}
+  p, li{font-size:15px;color:#3A3F46;}
+  a{color:#15803D;}
+  .muted{color:#7A7F86;font-size:13px;}
+  .lang{text-align:right;font-size:13px;}
+  @media (prefers-color-scheme: dark) {
+    body{background:#0C0F14;color:#E8ECF1;}
+    p, li{color:rgba(255,255,255,0.75);}
+    a{color:#4ADE80;}
+    .muted{color:rgba(255,255,255,0.45);}
+  }
+</style>
+</head>
+<body>
+<div class="lang"><a href="privacy.en.html">English version →</a></div>
+
+<h1>Zásady ochrany soukromí</h1>
+<p class="muted">Naposledy aktualizováno: 1. září 2026</p>
+
+<p>Tyto zásady popisují, jak aplikace <strong>Sapiora</strong> („aplikace") sbírá, používá a chrání údaje uživatelů. Aplikace je určena pro studenty od 12 let.</p>
+
+<h2>Kdo je provozovatel</h2>
+<p>Sapiora je studentský nekomerční projekt. Kontakt pro dotazy o ochraně údajů: <a href="mailto:edusapiora@gmail.com">edusapiora@gmail.com</a>.</p>
+
+<h2>Jaké údaje sbíráme</h2>
+<ul>
+  <li><strong>E-mail a heslo</strong> — pokud si vytvoříš účet. Ukládá se u našeho poskytovatele autentizace Supabase (EU servery). Heslo je hashované, nikdo ho nevidí v čitelné podobě.</li>
+  <li><strong>Obsah, který si sám napíšeš</strong> — kartičky, poznámky, plán učení, chatové zprávy s AI. Ukládá se lokálně ve tvém prohlížeči/telefonu a při přihlášeném účtu také v Supabase.</li>
+  <li><strong>Obsah pro AI zpracování</strong> — text nebo fotka, kterou pošleš AI (kartičky, kvíz, shrnutí, tutor). V nativní aplikaci (iOS/Android) běží AI (Llama 3B) a čtení textu z obrázků (TrOCR) <strong>přímo v tvém telefonu</strong> a nikam se neodesílá. Ve webové verzi (PWA) se pro AI dočasně používá Groq (USA) — v tom případě je vstupní text/obrázek odeslán a Groq ho po zpracování nedrží.</li>
+  <li><strong>Údaje o používání sdílených místností</strong> — kód místnosti, seznam členů, zprávy v chatu, sdílené kartičky a poznámky. Ukládají se v Supabase, aby je viděli všichni členové místnosti.</li>
+</ul>
+
+<h2>Co NEsbíráme</h2>
+<ul>
+  <li>Reklamní ani analytické identifikátory (např. Google Analytics, Facebook Pixel).</li>
+  <li>Údaje o poloze.</li>
+  <li>Kontakty, fotografie ani soubory, které si sám nezvolíš odeslat.</li>
+  <li>Údaje o zdraví ani finance.</li>
+</ul>
+
+<h2>Kde jsou data uložená</h2>
+<ul>
+  <li><strong>Lokálně v tvém prohlížeči nebo telefonu</strong> (localStorage / AsyncStorage) — kartičky, poznámky, plán, streak.</li>
+  <li><strong>Supabase</strong> — účty a data spojená s přihlášeným účtem. Servery Supabase pro tento projekt jsou v regionu EU (Frankfurt).</li>
+  <li><strong>Groq</strong> — pouze ve webové verzi (PWA) pro dočasné AI zpracování (USA). V nativní aplikaci AI běží lokálně a data se nikam neposílají.</li>
+</ul>
+
+<h2>Jak dlouho data uchováváme</h2>
+<p>Data v tvém účtu uchováváme, dokud si účet nesmažeš. Po smazání účtu (v Nastavení → Smazat účet) je z Supabase okamžitě odstraněno vše, co je spojené s tvým identifikátorem uživatele.</p>
+
+<h2>Tvá práva (GDPR)</h2>
+<ul>
+  <li><strong>Přístup</strong> — vidíš všechna svá data v aplikaci.</li>
+  <li><strong>Oprava</strong> — obsah si můžeš kdykoli upravit v aplikaci.</li>
+  <li><strong>Výmaz</strong> — Nastavení → Smazat účet.</li>
+  <li><strong>Přenositelnost</strong> — na žádost ti pošleme export tvých dat.</li>
+  <li><strong>Odvolání souhlasu</strong> — smazáním účtu.</li>
+</ul>
+<p>Uplatnění práv: napiš na <a href="mailto:edusapiora@gmail.com">edusapiora@gmail.com</a>. Odpovídáme do 30 dnů.</p>
+
+<h2>Věková hranice</h2>
+<p>Aplikace je určena pro uživatele od <strong>12 let</strong>. AI je moderovaná tak, aby negenerovala sexuální, násilný ani jinak nevhodný obsah. Pokud je ti méně než 12 let, aplikaci prosím nepoužívej.</p>
+
+<h2>Cookies</h2>
+<p>Aplikace nepoužívá reklamní cookies ani sledovací cookies. Používáme pouze technicky nezbytné úložiště v prohlížeči (localStorage) k zapamatování přihlášení a nastavení.</p>
+
+<h2>Sdílení údajů s třetími stranami</h2>
+<p>Údaje sdílíme pouze s těmito zpracovateli, kteří jsou nezbytní pro provoz:</p>
+<ul>
+  <li><a href="https://supabase.com/privacy" target="_blank">Supabase</a> — účty, databáze.</li>
+  <li><a href="https://groq.com/privacy" target="_blank">Groq</a> — pouze pro webovou verzi (jednorázové AI zpracování). V nativní aplikaci se nepoužívá — AI běží lokálně v telefonu.</li>
+  <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank">GitHub Pages</a> — hostování webové verze aplikace.</li>
+</ul>
+<p>Neprodáváme ani nesdílíme údaje pro reklamní účely.</p>
+
+<h2>Změny těchto zásad</h2>
+<p>Pokud tyto zásady změníme, aktualizujeme datum nahoře a informujeme tě při dalším spuštění aplikace.</p>
+
+<h2>Kontakt</h2>
+<p>Otázky a stížnosti: <a href="mailto:edusapiora@gmail.com">edusapiora@gmail.com</a></p>
+
+<p style="margin-top:40px;text-align:center;">
+  <a href="terms.html">Podmínky použití</a> · <a href="/studygrow/">Zpět do aplikace</a>
+</p>
+</body>
+</html>

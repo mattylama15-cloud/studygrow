@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — Sapiora</title>
+<style>
+  body{max-width:720px;margin:40px auto;padding:0 20px;font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6;color:#14171C;background:#FBFBF9;}
+  h1{font-size:28px;letter-spacing:-0.5px;font-family:Georgia,serif;}
+  h2{font-size:18px;margin-top:32px;letter-spacing:-0.3px;}
+  p, li{font-size:15px;color:#3A3F46;}
+  a{color:#15803D;}
+  .muted{color:#7A7F86;font-size:13px;}
+  .lang{text-align:right;font-size:13px;}
+  @media (prefers-color-scheme: dark) {
+    body{background:#0C0F14;color:#E8ECF1;}
+    p, li{color:rgba(255,255,255,0.75);}
+    a{color:#4ADE80;}
+    .muted{color:rgba(255,255,255,0.45);}
+  }
+</style>
+</head>
+<body>
+<div class="lang"><a href="privacy.html">Česká verze →</a></div>
+
+<h1>Privacy Policy</h1>
+<p class="muted">Last updated: 1 September 2026</p>
+
+<p>This policy describes how the <strong>Sapiora</strong> app ("the app") collects, uses and protects user data. The app is intended for students aged 12 and up.</p>
+
+<h2>Who runs the app</h2>
+<p>Sapiora is a student, non-commercial project. Contact for privacy questions: <a href="mailto:edusapiora@gmail.com">edusapiora@gmail.com</a>.</p>
+
+<h2>What data we collect</h2>
+<ul>
+  <li><strong>Email and password</strong> — if you create an account. Stored with our authentication provider Supabase (EU servers). Passwords are hashed; no one sees them in plain text.</li>
+  <li><strong>Content you write</strong> — flashcards, notes, study plan, chat messages with the AI. Stored locally in your browser or phone, and in Supabase when you are signed in.</li>
+  <li><strong>Content for AI processing</strong> — text or photo you send to the AI (cards, quiz, summary, tutor). In the native app (iOS/Android), the AI (Llama 3B) and text-from-image reader (TrOCR) run <strong>on your device</strong> and nothing is sent anywhere. In the web version (PWA) we temporarily use Groq (USA) — in that case the input is sent and Groq does not retain it after processing.</li>
+  <li><strong>Shared room activity</strong> — room code, member list, chat messages, shared decks and notes. Stored in Supabase so all room members can see them.</li>
+</ul>
+
+<h2>What we do NOT collect</h2>
+<ul>
+  <li>Advertising or analytics identifiers (no Google Analytics, no Facebook Pixel).</li>
+  <li>Location data.</li>
+  <li>Contacts, photos, or files unless you choose to send them.</li>
+  <li>Health or financial data.</li>
+</ul>
+
+<h2>Where the data is stored</h2>
+<ul>
+  <li><strong>Locally in your browser or phone</strong> (localStorage / AsyncStorage) — flashcards, notes, plan, streak.</li>
+  <li><strong>Supabase</strong> — accounts and account-linked data. Servers for this project are in the EU (Frankfurt).</li>
+  <li><strong>Groq</strong> — only in the web version (PWA) for temporary AI processing (USA). In the native app the AI runs on your device and nothing is sent.</li>
+</ul>
+
+<h2>How long we keep the data</h2>
+<p>We keep your account data until you delete the account. When you delete your account (Settings → Delete account), everything tied to your user ID is immediately removed from Supabase.</p>
+
+<h2>Your rights (GDPR)</h2>
+<ul>
+  <li><strong>Access</strong> — all your data is visible inside the app.</li>
+  <li><strong>Correction</strong> — you can edit your content at any time.</li>
+  <li><strong>Erasure</strong> — Settings → Delete account.</li>
+  <li><strong>Portability</strong> — on request we send you a data export.</li>
+  <li><strong>Withdrawal of consent</strong> — by deleting your account.</li>
+</ul>
+<p>To exercise your rights, email <a href="mailto:edusapiora@gmail.com">edusapiora@gmail.com</a>. We respond within 30 days.</p>
+
+<h2>Age limit</h2>
+<p>The app is intended for users aged <strong>12 and up</strong>. The AI is moderated so it will not generate sexual, violent or otherwise inappropriate content. If you are under 12, please do not use the app.</p>
+
+<h2>Cookies</h2>
+<p>The app uses no advertising or tracking cookies. Only strictly necessary local browser storage (localStorage) is used to remember your login and settings.</p>
+
+<h2>Sharing data with third parties</h2>
+<p>We share data only with processors necessary for operation:</p>
+<ul>
+  <li><a href="https://supabase.com/privacy" target="_blank">Supabase</a> — accounts, database.</li>
+  <li><a href="https://groq.com/privacy" target="_blank">Groq</a> — web version only (one-off AI processing). Not used in the native app — AI runs locally on your device.</li>
+  <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank">GitHub Pages</a> — hosting the web version.</li>
+</ul>
+<p>We never sell or share data for advertising.</p>
+
+<h2>Changes to this policy</h2>
+<p>If we change this policy, we update the date at the top and let you know the next time you open the app.</p>
+
+<h2>Contact</h2>
+<p>Questions and complaints: <a href="mailto:edusapiora@gmail.com">edusapiora@gmail.com</a></p>
+
+<p style="margin-top:40px;text-align:center;">
+  <a href="terms.en.html">Terms of Service</a> · <a href="/studygrow/">Back to app</a>
+</p>
+</body>
+</html>
