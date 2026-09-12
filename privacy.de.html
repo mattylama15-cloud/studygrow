@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Datenschutzerklärung — Sapiora</title>
+<style>
+  body{max-width:720px;margin:40px auto;padding:0 20px;font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6;color:#14171C;background:#FBFBF9;}
+  h1{font-size:28px;letter-spacing:-0.5px;font-family:Georgia,serif;}
+  h2{font-size:18px;margin-top:32px;letter-spacing:-0.3px;}
+  p, li{font-size:15px;color:#3A3F46;}
+  a{color:#15803D;}
+  .muted{color:#7A7F86;font-size:13px;}
+  @media (prefers-color-scheme: dark) {
+    body{background:#0C0F14;color:#E8ECF1;}
+    p, li{color:rgba(255,255,255,0.75);}
+    a{color:#4ADE80;}
+    .muted{color:rgba(255,255,255,0.45);}
+  }
+</style>
+</head>
+<body>
+
+<h1>Datenschutzerklärung</h1>
+<p class="muted">Zuletzt aktualisiert: 1. September 2026</p>
+
+<p>Diese Erklärung beschreibt, wie die App <strong>Sapiora</strong> („die App") Nutzerdaten erhebt, verwendet und schützt. Die App richtet sich an Schüler und Studenten ab 12 Jahren.</p>
+
+<h2>Wer betreibt die App</h2>
+<p>Sapiora ist ein studentisches, nicht kommerzielles Projekt. Kontakt für Datenschutzfragen: <a href="mailto:edusapiora@gmail.com">edusapiora@gmail.com</a>.</p>
+
+<h2>Welche Daten wir erheben</h2>
+<ul>
+  <li><strong>E-Mail und Passwort</strong> — wenn du ein Konto erstellst. Wird beim Authentifizierungsanbieter Supabase (EU-Server) gespeichert. Passwörter werden gehasht, niemand sieht sie im Klartext.</li>
+  <li><strong>Von dir erstellte Inhalte</strong> — Karteikarten, Notizen, Lernplan, Chat-Nachrichten mit der KI. Werden lokal in deinem Browser oder Telefon gespeichert und bei angemeldetem Konto zusätzlich bei Supabase.</li>
+  <li><strong>Inhalte für die KI-Verarbeitung</strong> — Text oder Foto, das du an die KI sendest. In der nativen App (iOS/Android) laufen KI (Llama 3B) und Texterkennung (TrOCR) <strong>direkt auf deinem Gerät</strong> und nichts wird versendet. In der Webversion (PWA) verwenden wir vorübergehend Groq (USA) — in diesem Fall wird die Eingabe gesendet und von Groq nach der Verarbeitung nicht gespeichert.</li>
+  <li><strong>Aktivität in geteilten Räumen</strong> — Raumcode, Mitgliederliste, Chat-Nachrichten, geteilte Karteikarten und Notizen. Werden bei Supabase gespeichert, damit alle Mitglieder des Raums sie sehen können.</li>
+</ul>
+
+<h2>Was wir NICHT erheben</h2>
+<ul>
+  <li>Werbe- oder Analyse-Identifikatoren (kein Google Analytics, kein Facebook Pixel).</li>
+  <li>Standortdaten.</li>
+  <li>Kontakte, Fotos oder Dateien, die du nicht selbst sendest.</li>
+  <li>Gesundheits- oder Finanzdaten.</li>
+</ul>
+
+<h2>Wo die Daten gespeichert werden</h2>
+<ul>
+  <li><strong>Lokal in deinem Browser oder Telefon</strong> (localStorage / AsyncStorage) — Karteikarten, Notizen, Plan, Streak.</li>
+  <li><strong>Supabase</strong> — Konten und kontobezogene Daten. Die Server für dieses Projekt befinden sich in der EU (Frankfurt).</li>
+  <li><strong>Groq</strong> — nur in der Webversion (PWA) für vorübergehende KI-Verarbeitung (USA). In der nativen App läuft die KI auf deinem Gerät, es wird nichts versendet.</li>
+</ul>
+
+<h2>Wie lange wir die Daten aufbewahren</h2>
+<p>Wir bewahren deine Kontodaten auf, bis du dein Konto löschst. Wenn du dein Konto löschst (Einstellungen → Konto löschen), wird alles, was mit deiner Nutzer-ID verbunden ist, sofort aus Supabase entfernt.</p>
+
+<h2>Deine Rechte (DSGVO)</h2>
+<ul>
+  <li><strong>Auskunft</strong> — alle deine Daten sind in der App sichtbar.</li>
+  <li><strong>Berichtigung</strong> — du kannst deine Inhalte jederzeit bearbeiten.</li>
+  <li><strong>Löschung</strong> — Einstellungen → Konto löschen.</li>
+  <li><strong>Datenübertragbarkeit</strong> — auf Anfrage senden wir dir einen Datenexport.</li>
+  <li><strong>Widerruf der Einwilligung</strong> — durch Löschen deines Kontos.</li>
+</ul>
+<p>Zur Ausübung deiner Rechte schreibe an <a href="mailto:edusapiora@gmail.com">edusapiora@gmail.com</a>. Wir antworten innerhalb von 30 Tagen.</p>
+
+<h2>Altersgrenze</h2>
+<p>Die App ist für Nutzer ab <strong>12 Jahren</strong> bestimmt. Die KI ist moderiert und generiert keine sexuellen, gewalttätigen oder anderweitig unangemessenen Inhalte. Wenn du unter 12 Jahre alt bist, verwende die App bitte nicht.</p>
+
+<h2>Cookies</h2>
+<p>Die App verwendet keine Werbe- oder Tracking-Cookies. Wir verwenden nur unbedingt erforderlichen lokalen Browser-Speicher (localStorage), um Anmeldung und Einstellungen zu merken.</p>
+
+<h2>Weitergabe an Dritte</h2>
+<p>Daten geben wir nur an folgende Auftragsverarbeiter weiter, die für den Betrieb erforderlich sind:</p>
+<ul>
+  <li><a href="https://supabase.com/privacy" target="_blank">Supabase</a> — Konten, Datenbank.</li>
+  <li><a href="https://groq.com/privacy" target="_blank">Groq</a> — nur für die Webversion (einmalige KI-Verarbeitung). In der nativen App nicht verwendet — KI läuft lokal auf dem Gerät.</li>
+  <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank">GitHub Pages</a> — Hosting der Webversion.</li>
+</ul>
+<p>Wir verkaufen oder teilen keine Daten für Werbezwecke.</p>
+
+<h2>Änderungen dieser Erklärung</h2>
+<p>Wenn wir diese Erklärung ändern, aktualisieren wir das Datum oben und informieren dich beim nächsten Öffnen der App.</p>
+
+<h2>Kontakt</h2>
+<p>Fragen und Beschwerden: <a href="mailto:edusapiora@gmail.com">edusapiora@gmail.com</a></p>
+
+<p style="margin-top:40px;text-align:center;">
+  <a href="terms.de.html">Nutzungsbedingungen</a> · <a href="/studygrow/">Zurück zur App</a>
+</p>
+</body>
+</html>
