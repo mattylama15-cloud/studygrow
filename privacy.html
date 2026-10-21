@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zásady ochrany soukromí — Sapiora</title>
+<style>
+  body{max-width:720px;margin:40px auto;padding:0 20px;font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6;color:#14171C;background:#FBFBF9;}
+  h1{font-size:28px;letter-spacing:-0.5px;font-family:Georgia,serif;}
+  h2{font-size:18px;margin-top:32px;letter-spacing:-0.3px;}
+  p, li{font-size:15px;color:#3A3F46;}
+  a{color:#15803D;}
+  .muted{color:#7A7F86;font-size:13px;}
+  .lang{text-align:right;font-size:13px;}
+  @media (prefers-color-scheme: dark) {
+    body{background:#0C0F14;color:#E8ECF1;}
+    p, li{color:rgba(255,255,255,0.75);}
+    a{color:#4ADE80;}
+    .muted{color:rgba(255,255,255,0.45);}
+  }
+</style>
+</head>
+<body>
+
+<h1>Zásady ochrany soukromí</h1>
+<p class="muted">Naposledy aktualizováno: 21. října 2026</p>
+
+<p>Tyto zásady popisují, jak aplikace <strong>Sapiora</strong> („aplikace") sbírá, používá a chrání údaje uživatelů. Aplikace je určena pro studenty od 16 let.</p>
+
+<h2>Kdo je provozovatel</h2>
+<p>Sapiora je studentský nekomerční projekt. Kontakt pro dotazy o ochraně údajů: <a href="mailto:edusapiora@gmail.com">edusapiora@gmail.com</a>.</p>
+
+<h2>Jaké údaje sbíráme</h2>
+<ul>
+  <li><strong>E-mail a heslo</strong> — pro používání aplikace je potřeba účet. Ukládá se u našeho poskytovatele autentizace Supabase (EU servery). Heslo je hashované, nikdo ho nevidí v čitelné podobě.</li>
+  <li><strong>Záznam o souhlasu</strong> — při registraci si k účtu uložíme, že jsi potvrdil věk 16+ a souhlas s Podmínkami a těmito Zásadami (datum a jazyk), abychom to mohli doložit.</li>
+  <li><strong>Obsah, který si sám vytvoříš</strong> — kartičky, poznámky, plán učení, testy, statistiky, nastavení a konverzace s AI. Ukládá se ve tvém zařízení a zároveň jako záloha k tvému účtu v Supabase, aby se ti obnovil po přeinstalaci aplikace nebo na jiném zařízení. Fotky přiložené v chatu s AI se do zálohy neukládají a zůstávají jen ve tvém zařízení.</li>
+  <li><strong>Obsah pro AI zpracování</strong> — text nebo fotka, kterou pošleš AI (tutor, kartičky, kvíz, shrnutí, čtení textu z fotky). Ke zpracování se odesílá společnosti Anthropic (USA), která provozuje model Claude. Anthropic tyto údaje nepoužívá k trénování svých modelů a ze svých serverů je automaticky maže do 30 dnů. Déle (až 2 roky) je může uchovat jen v případě, že obsah porušuje jeho pravidla použití, nebo když to vyžaduje zákon. Přenos dat do USA je chráněn standardními smluvními doložkami EU.</li>
+  <li><strong>Údaje o používání sdílených místností</strong> — kód místnosti, seznam členů, zprávy v chatu, sdílené kartičky a poznámky. Ukládají se v Supabase, aby je viděli všichni členové místnosti.</li>
+</ul>
+
+<h2>Proč údaje zpracováváme a na jakém právním základě</h2>
+<ul>
+  <li><strong>Plnění smlouvy</strong> (čl. 6 odst. 1 písm. b) GDPR) — vytvoření a správa účtu, ukládání a synchronizace tvého obsahu, AI funkce a sdílené místnosti. Bez toho ti aplikaci nemůžeme poskytovat.</li>
+  <li><strong>Oprávněný zájem</strong> (čl. 6 odst. 1 písm. f) GDPR) — bezpečnost aplikace, ochrana před zneužitím a nevhodným obsahem a doložení tvého souhlasu s podmínkami.</li>
+  <li><strong>Právní povinnost</strong> (čl. 6 odst. 1 písm. c) GDPR) — pokud nám zákon uloží údaje uchovat nebo předat.</li>
+</ul>
+<p>E-mail a heslo jsou nutné pro vytvoření účtu; bez nich aplikaci používat nelze. Neprovádíme automatizované rozhodování ani profilování, které by pro tebe mělo právní nebo podobně závažné účinky.</p>
+
+<h2>Co NEsbíráme</h2>
+<ul>
+  <li>Reklamní ani analytické identifikátory (např. Google Analytics, Facebook Pixel).</li>
+  <li>Údaje o poloze.</li>
+  <li>Kontakty, fotografie ani soubory, které si sám nezvolíš odeslat.</li>
+  <li>Údaje o zdraví ani finance.</li>
+</ul>
+
+<h2>Kde jsou data uložená</h2>
+<ul>
+  <li><strong>Lokálně v tvém prohlížeči nebo telefonu</strong> (localStorage / AsyncStorage) — veškerý tvůj obsah, aby aplikace fungovala i bez internetu.</li>
+  <li><strong>Supabase</strong> — účty, záloha tvého obsahu a sdílené místnosti. Servery Supabase pro tento projekt jsou v regionu EU (Frankfurt).</li>
+  <li><strong>Anthropic</strong> — zpracování AI (USA). Vstupy a odpovědi AI maže do 30 dnů, viz výše.</li>
+</ul>
+
+<h2>Jak dlouho data uchováváme</h2>
+<p>Data v tvém účtu uchováváme, dokud si účet nesmažeš. Po smazání účtu (v Nastavení → Smazat účet) je ze Supabase okamžitě odstraněno vše, co je spojené s tvým identifikátorem uživatele, včetně zálohy tvého obsahu. Data uložená ve tvém zařízení se při smazání účtu i při odhlášení vymažou také.</p>
+
+<h2>Tvá práva (GDPR)</h2>
+<ul>
+  <li><strong>Přístup</strong> — vidíš všechna svá data v aplikaci.</li>
+  <li><strong>Oprava</strong> — obsah si můžeš kdykoli upravit v aplikaci.</li>
+  <li><strong>Výmaz</strong> — Nastavení → Smazat účet.</li>
+  <li><strong>Přenositelnost</strong> — na žádost ti pošleme export tvých dat.</li>
+  <li><strong>Odvolání souhlasu</strong> — smazáním účtu.</li>
+  <li><strong>Omezení zpracování a námitka</strong> — můžeš nás požádat, abychom zpracování omezili, nebo vznést námitku proti zpracování na základě oprávněného zájmu.</li>
+  <li><strong>Stížnost</strong> — můžeš podat stížnost u Úřadu pro ochranu osobních údajů (<a href="https://uoou.gov.cz" target="_blank">uoou.gov.cz</a>) nebo u dozorového úřadu ve státě, kde žiješ.</li>
+</ul>
+<p>Uplatnění práv: napiš na <a href="mailto:edusapiora@gmail.com">edusapiora@gmail.com</a>. Odpovídáme do 30 dnů.</p>
+
+<h2>Věková hranice</h2>
+<p>Aplikace je určena pro uživatele od <strong>16 let</strong>. AI je moderovaná tak, aby negenerovala sexuální, násilný ani jinak nevhodný obsah. Pokud je ti méně než 16 let, aplikaci prosím nepoužívej.</p>
+
+<h2>Cookies</h2>
+<p>Aplikace nepoužívá reklamní cookies ani sledovací cookies. Používáme pouze technicky nezbytné úložiště v prohlížeči (localStorage) k zapamatování přihlášení, nastavení a tvého obsahu.</p>
+
+<h2>Sdílení údajů s třetími stranami</h2>
+<p>Údaje sdílíme pouze s těmito zpracovateli, kteří jsou nezbytní pro provoz:</p>
+<ul>
+  <li><a href="https://supabase.com/privacy" target="_blank">Supabase</a> — účty, databáze.</li>
+  <li><a href="https://www.anthropic.com/legal/privacy" target="_blank">Anthropic</a> — zpracování textu a fotek pomocí AI (model Claude).</li>
+  <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank">GitHub Pages</a> — hostování webové verze aplikace (USA). Při načtení webu zpracovává technické údaje, například IP adresu.</li>
+</ul>
+<p>Neprodáváme ani nesdílíme údaje pro reklamní účely.</p>
+
+<h2>Změny těchto zásad</h2>
+<p>Pokud tyto zásady změníme, aktualizujeme datum nahoře a o podstatných změnách tě budeme informovat e-mailem.</p>
+
+<h2>Kontakt</h2>
+<p>Otázky a stížnosti: <a href="mailto:edusapiora@gmail.com">edusapiora@gmail.com</a></p>
+
+<p style="margin-top:40px;text-align:center;">
+  <a href="terms.html">Podmínky použití</a> · <a href="/studygrow/">Zpět do aplikace</a>
+</p>
+</body>
+</html>

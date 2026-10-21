@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sapiora</title>
+<style>
+  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;box-sizing:border-box;font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#FBFBF9;color:#14171C;text-align:center;}
+  .card{max-width:380px;}
+  .brand{font-family:Georgia,serif;font-size:30px;color:#15803D;margin-bottom:36px;}
+  .icon{width:72px;height:72px;border-radius:50%;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;font-size:36px;background:rgba(21,128,61,0.12);color:#15803D;}
+  .icon.warn{background:rgba(217,119,6,0.14);color:#D97706;}
+  h1{font-size:24px;font-weight:600;margin:0 0 10px;letter-spacing:-0.3px;}
+  p{font-size:15px;line-height:1.6;color:#5B6068;margin:0;}
+  @media (prefers-color-scheme: dark){
+    body{background:#0C0F14;color:#FFFFFF;}
+    .brand{color:#4ADE80;}
+    .icon{background:rgba(74,222,128,0.15);color:#4ADE80;}
+    .icon.warn{background:rgba(245,158,11,0.15);color:#F59E0B;}
+    p{color:rgba(255,255,255,0.6);}
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="brand">Sapiora</div>
+  <div class="icon" id="icon">✓</div>
+  <h1 id="title"></h1>
+  <p id="text"></p>
+</div>
+<script>
+  // Supabase sem přesměruje po kliknutí na potvrzovací odkaz. Účet je v tu chvíli
+  // už potvrzený na serveru; při chybě (vypršelý / použitý odkaz) přidá do adresy „error".
+  var T = {
+    cs: { ok: 'E-mail je potvrzený', okText: 'Toto okno můžeš zavřít. Appka Sapiora tě pustí dál sama.',
+          bad: 'Odkaz už neplatí', badText: 'Odkaz platí jen jednou a jen chvíli. Vrať se do appky a přihlas se, případně si nech poslat nový odkaz.' },
+    en: { ok: 'Email confirmed', okText: 'You can close this window. The Sapiora app will let you in automatically.',
+          bad: 'This link is no longer valid', badText: 'Links work only once and only for a short time. Go back to the app and sign in, or request a new link.' },
+    de: { ok: 'E-Mail bestätigt', okText: 'Du kannst dieses Fenster schließen. Die Sapiora-App lässt dich automatisch weiter.',
+          bad: 'Dieser Link ist nicht mehr gültig', badText: 'Links funktionieren nur einmal und nur kurze Zeit. Geh zurück in die App und melde dich an oder fordere einen neuen Link an.' },
+    es: { ok: 'Correo confirmado', okText: 'Puedes cerrar esta ventana. La app Sapiora te dejará pasar automáticamente.',
+          bad: 'Este enlace ya no es válido', badText: 'Los enlaces solo funcionan una vez y durante poco tiempo. Vuelve a la app e inicia sesión o pide un enlace nuevo.' }
+  };
+  var lang = (navigator.language || 'en').slice(0, 2).toLowerCase();
+  var t = T[lang] || T.en;
+  document.documentElement.lang = T[lang] ? lang : 'en';
+  var failed = /error/.test(location.search + location.hash);
+  document.getElementById('title').textContent = failed ? t.bad : t.ok;
+  document.getElementById('text').textContent = failed ? t.badText : t.okText;
+  document.title = 'Sapiora — ' + (failed ? t.bad : t.ok);
+  if (failed) { var i = document.getElementById('icon'); i.className = 'icon warn'; i.textContent = '!'; }
+</script>
+</body>
+</html>
